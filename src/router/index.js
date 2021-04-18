@@ -21,8 +21,8 @@ const router = new VueRouter({
 
 })
 router.beforeEach((to, from, next) => {
+    //只有登陆成功才可以访问别的页面
     if (to.path === '/login') return next()
-
     const tokenStr = window.sessionStorage.getItem('token')
     if (!tokenStr) return next('/login')
     next()

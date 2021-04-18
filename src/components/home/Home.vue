@@ -8,6 +8,7 @@
 export default {
 methods:{
     logout() {
+        //退出功能
         window.sessionStorage.clear()
         this.$router.push('/login')
     }

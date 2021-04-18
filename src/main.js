@@ -4,16 +4,13 @@ import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 // import './assets/fonts/iconfont.css'
-import { Form, FormItem } from 'element-ui'
-import { Input, Button } from 'element-ui'
-import { Message } from 'element-ui'
-
+import { Form, FormItem, Input, Button, Message } from 'element-ui'
 import axios from 'axios'
-Vue.prototype.$http = axios
-axios.defaults.baseURL = 'http://www.ysqorz.top:8888/api/private/v1/'
-    // http: //www.ysqorz.top:8888/api/private/v1/
-Vue.prototype.$message = Message
 
+
+Vue.prototype.$http = axios
+axios.defaults.baseURL = 'http://www.ysqorz.top:8888/api/private/v1/' // http: //www.ysqorz.top:8888/api/private/v1/
+Vue.prototype.$message = Message
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
